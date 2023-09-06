@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chọn số may mắn</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Đăng nhập</h1>
+    <form id="loginForm">
+        <label for="username">Tên người dùng:</label>
+        <input type="text" id="username" required>
+        <label for="password">Mật khẩu:</label>
+        <input type="password" id="password" required>
+        <button type="submit">Đăng nhập</button>
+    </form>
+    <div id="gameContainer" style="display: none;">
+        <h1>Chọn số may mắn</h1>
+        <label for="number" style="background-color: aqua;">Nhập số (0-99): </label>
+        <input type="number" id="number" min="0" max="99">
+        <label for="bet">Chọn mức cược:</label>
+        <select id="bet">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+        </select>
+        <button id="chooseButton">Chọn</button>
+        <p id="result"></p>
+        <p id="countdown"></p>
+        <p id="score"></p>
+        <button id="logoutButton" style="display: none;">Đăng xuất</button>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
